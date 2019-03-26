@@ -4,6 +4,10 @@
 
 This is a bare-bones project to show a custom module example and demonstrate several Drupal 8 concepts and features. 
 
+> This is in no way intended to be a complete site, ready for public use. It is intended purely for development purposes
+and to demonstrate specific concepts. 
+
+
 Basic Use Case:
 -You are planning an event and you have to plan X many 3-course meals for X many people. Each course can have X many 
 options. You also need to easily and dynamically see the aggregate totals per meal option.  
@@ -13,26 +17,24 @@ for 5 days.
 
 Demo instructions:
 
-- Clone the repo.
-- Note that a copy of the database is in the /db directory
-- Import the database and configure your site settings.
+-Clone the repo.  
+-Note that a copy of the database is in the /db directory  
+-Import the database and configure your site settings.  
 
 
-
-- Log in as a regular user.
-- Click the 'Your Meals' tab.
-- For each meal click the link to place an order or edit an order.
-- Log out when done.
-
+-Log in as a regular user. **u: customer1  p: drupal123**  
+-Click the 'Your Meals' tab.  
+-For each meal click the link to place an order or edit an order.  
+-Log out when done.  
 
 
-- Log in as an admin user.
-- Note you can add to any of the options for any of the courses via Taxonomy vocabularies 
-  at /admin/structure/taxonomy
-- Go to the Content View (/admin/content) and note you can edit any existing meals by editing any of the 
-  existing Meal nodes.
-- Use the 'Customer Order Admin' tab to edit individual orders for individual users. 
-- Use the 'Totals' tab to view total counts of each item ordered. 
+-Log in as an admin user. **u: admin  p: drupal123**  
+-Note you can add to any of the options for any of the courses via Taxonomy vocabularies
+  at /admin/structure/taxonomy  
+-Go to the Content View (/admin/content) and note you can edit any existing meals by editing any of the 
+existing Meal nodes.  
+-Use the 'Customer Order Admin' tab to edit individual orders for individual users.  
+-Use the 'Totals' tab to view total counts of each item ordered.  
 
 
 
