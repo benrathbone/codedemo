@@ -8,7 +8,7 @@ This is a bare-bones project to show a custom module example and demonstrate sev
 and to demonstrate specific concepts. 
 
 
-Basic Use Case:
+Basic Use Case:  
 -You are planning an event and you have to plan X many 3-course meals for X many people. Each course can have X many 
 options. You also need to easily and dynamically see the aggregate totals per meal option.  
 -i.e. You are planning an event where you will provide a 3-course breakfast, lunch, and dinner for 500 people 
