@@ -1,0 +1,66 @@
+uuid: 1fc3ca04-9532-45da-b249-631415fea079
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.meal.field_day
+    - field.field.node.meal.field_desert
+    - field.field.node.meal.field_main
+    - field.field.node.meal.field_mea
+    - field.field.node.meal.field_starter
+    - node.type.meal
+  module:
+    - options
+    - user
+id: node.meal.default
+targetEntityType: node
+bundle: meal
+mode: default
+content:
+  field_day:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_desert:
+    weight: 5
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_main:
+    weight: 4
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_mea:
+    weight: 2
+    label: above
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+    type: timestamp
+    region: content
+  field_starter:
+    weight: 3
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

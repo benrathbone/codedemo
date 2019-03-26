@@ -1,0 +1,38 @@
+<?php
+
+/**
+ * @file
+ * Contains codedemo_orders.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function codedemo_orders_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the codedemo_orders module.
+    case 'help.page.codedemo_orders':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Custom Entities to track meal orders for individuals') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+
+/**
+ * Implements hook_entity_type_build().
+ *
+ *
+ */
+function codedemo_orders_entity_type_build(array &$entity_types) {
+  $entity_types['order_entity']->setFormClass(
+    'customer_order_form',
+    'Drupal\codedemo_orders\Form\CustomerOrderEntityForm'
+  );
+}
+

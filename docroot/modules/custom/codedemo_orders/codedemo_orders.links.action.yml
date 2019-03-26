@@ -1,0 +1,5 @@
+entity.order_entity.add_form:
+  route_name: entity.order_entity.add_form
+  title: 'Add Order'
+  appears_on:
+    - entity.order_entity.collection

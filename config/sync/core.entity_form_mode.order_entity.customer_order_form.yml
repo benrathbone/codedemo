@@ -1,0 +1,10 @@
+uuid: 31a5468e-0766-4d25-ab0b-98d5dc213769
+langcode: en
+status: true
+dependencies:
+  module:
+    - codedemo_orders
+id: order_entity.customer_order_form
+label: 'Customer Order Form'
+targetEntityType: order_entity
+cache: true

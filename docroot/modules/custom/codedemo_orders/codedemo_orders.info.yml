@@ -1,0 +1,5 @@
+name: 'codedemo_orders'
+type: module
+description: 'A code demo to track meal orders for a group of people'
+core: 8.x
+package: 'Custom'

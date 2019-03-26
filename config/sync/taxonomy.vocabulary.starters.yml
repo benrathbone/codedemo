@@ -1,0 +1,9 @@
+uuid: a9524266-f134-4c4a-b56a-07e9aa060790
+langcode: en
+status: true
+dependencies: {  }
+name: Starters
+vid: starters
+description: ''
+hierarchy: 0
+weight: -10

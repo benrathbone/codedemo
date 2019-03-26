@@ -1,0 +1,20 @@
+uuid: d0ebc34a-7e7a-4c7c-b11f-42777bc40502
+langcode: en
+status: true
+dependencies:
+  module:
+    - codedemo_orders
+    - taxonomy
+id: order_entity.field_dessert
+field_name: field_dessert
+entity_type: order_entity
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

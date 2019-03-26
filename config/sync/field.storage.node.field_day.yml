@@ -1,0 +1,33 @@
+uuid: 235ef9ad-e64a-42a0-8e89-a2f1414340a4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_day
+field_name: field_day
+entity_type: node
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 1
+      label: 'Day 1 - Monday'
+    -
+      value: 2
+      label: 'Day 2 - Tuesday'
+    -
+      value: 3
+      label: 'Day 3 - Wednesday'
+    -
+      value: 4
+      label: 'Day 4 - Thursday'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

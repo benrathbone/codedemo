@@ -1,0 +1,29 @@
+uuid: 6bca96a8-4705-4cf7-aa40-07c299652cdd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_desert
+    - node.type.meal
+    - taxonomy.vocabulary.desserts
+id: node.meal.field_desert
+field_name: field_desert
+entity_type: node
+bundle: meal
+label: Desert
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      desserts: desserts
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

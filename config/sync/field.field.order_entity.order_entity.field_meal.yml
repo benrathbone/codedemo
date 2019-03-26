@@ -1,0 +1,29 @@
+uuid: daebf27c-73e3-4993-94f6-a3b4932c7c56
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.order_entity.field_meal
+    - node.type.meal
+  module:
+    - codedemo_orders
+id: order_entity.order_entity.field_meal
+field_name: field_meal
+entity_type: order_entity
+bundle: order_entity
+label: Meal
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      meal: meal
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

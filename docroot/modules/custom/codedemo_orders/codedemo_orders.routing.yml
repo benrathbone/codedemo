@@ -1,0 +1,7 @@
+
+codedemo_orders.order_controller_edit:
+  path: '/codedemo_orders/{meal}/edit'
+  defaults:
+    _controller: '\Drupal\codedemo_orders\Controller\OrderController::edit'
+  requirements:
+    _permission: 'access content'

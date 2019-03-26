@@ -1,0 +1,18 @@
+uuid: ba24f4b2-96cd-44a9-8fb8-07ae7289ee2b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_mea
+field_name: field_mea
+entity_type: node
+type: timestamp
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

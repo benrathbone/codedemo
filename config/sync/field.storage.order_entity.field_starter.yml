@@ -1,0 +1,20 @@
+uuid: c4fdb4b1-7b9c-4bb0-b026-2e8c07b8b780
+langcode: en
+status: true
+dependencies:
+  module:
+    - codedemo_orders
+    - taxonomy
+id: order_entity.field_starter
+field_name: field_starter
+entity_type: order_entity
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

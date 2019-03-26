@@ -1,0 +1,20 @@
+uuid: a1f4c033-1833-4b7f-a9f1-fb691100f9c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.meal
+  module:
+    - user
+id: node.meal.teaser
+targetEntityType: node
+bundle: meal
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

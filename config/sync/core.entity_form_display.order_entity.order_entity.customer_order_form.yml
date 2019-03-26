@@ -1,0 +1,41 @@
+uuid: e191f0ed-6147-4d02-8fec-ebf4a93e11f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.order_entity.customer_order_form
+    - field.field.order_entity.order_entity.field_customer
+    - field.field.order_entity.order_entity.field_dessert
+    - field.field.order_entity.order_entity.field_main
+    - field.field.order_entity.order_entity.field_meal
+    - field.field.order_entity.order_entity.field_starter
+  module:
+    - codedemo_orders
+id: order_entity.order_entity.customer_order_form
+targetEntityType: order_entity
+bundle: order_entity
+mode: customer_order_form
+content:
+  field_dessert:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_main:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_starter:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+hidden:
+  field_customer: true
+  field_meal: true
+  name: true
+  user_id: true

@@ -1,0 +1,29 @@
+uuid: 4a620fb3-8bbd-49f8-93de-3dac0b0dce13
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_starter
+    - node.type.meal
+    - taxonomy.vocabulary.starters
+id: node.meal.field_starter
+field_name: field_starter
+entity_type: node
+bundle: meal
+label: Starter
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      starters: starters
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

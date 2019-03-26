@@ -1,0 +1,29 @@
+uuid: 57376785-6f5b-489e-bfcc-9af4bc65b5b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_main
+    - node.type.meal
+    - taxonomy.vocabulary.main_course
+id: node.meal.field_main
+field_name: field_main
+entity_type: node
+bundle: meal
+label: Main
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      main_course: main_course
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

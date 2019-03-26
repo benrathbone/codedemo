@@ -1,0 +1,21 @@
+uuid: 6615f1e5-db02-47eb-babb-d46d77a13c35
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mea
+    - node.type.meal
+id: node.meal.field_mea
+field_name: field_mea
+entity_type: node
+bundle: meal
+label: 'Meal Date-Time'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1553380631
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

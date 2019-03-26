@@ -1,0 +1,14 @@
+uuid: 34408c19-e724-4e01-9cb1-cc4383e7209d
+name: 'Code Demo: Meal Planner'
+mail: ben.rathbone@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/5
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

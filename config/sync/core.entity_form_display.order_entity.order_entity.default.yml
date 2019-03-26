@@ -1,0 +1,64 @@
+uuid: 026b3f8c-c41d-4d95-8224-474f4430b269
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.order_entity.order_entity.field_customer
+    - field.field.order_entity.order_entity.field_dessert
+    - field.field.order_entity.order_entity.field_main
+    - field.field.order_entity.order_entity.field_meal
+    - field.field.order_entity.order_entity.field_starter
+  module:
+    - codedemo_orders
+id: order_entity.order_entity.default
+targetEntityType: order_entity
+bundle: order_entity
+mode: default
+content:
+  field_customer:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_dessert:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_main:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_meal:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_starter:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  user_id:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  name: true
