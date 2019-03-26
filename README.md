@@ -13,10 +13,15 @@ for 5 days.
 
 Demo instructions:
 
-- Log in as a regular user. 
-- Click the 'Your Meals' tab. 
-- For each meal click the link to place an order or edit an order. 
-- Log out when done. 
+- Clone the repo.
+- Note that a copy of the database is in the /db directory
+- Import the database and configure your site settings.
+
+
+- Log in as a regular user.
+- Click the 'Your Meals' tab.
+- For each meal click the link to place an order or edit an order.
+- Log out when done.
 
 
 - Log in as an admin user.
